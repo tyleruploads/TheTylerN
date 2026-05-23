@@ -1,3 +1,44 @@
 baseURL: https://example.org/
+env: "Production"
 locale: en-us
-title: My New Hugo Project
+title: "The Tyler N"
+theme: ["PaperMod"]
+enableGitInfo: true
+
+params:
+  profileMode:
+    enabled: true
+    title: "Tyler N"
+    subtitle: "Welcome to The Tyler N. I will publish articles on this site."
+    imageUrl: "https://github.com/tyleruploads.png"
+    imageWidth: 120
+    imageHeight: 120
+    buttons:
+      - name: "View Publications"
+        url: "/publications"
+
+  socialIcons:
+    - name: "Github"
+      url: "https://github.com/tyleruploads"
+
+  homeInfoParams:
+    Title: "The Tyler N Publications"
+    Content: "Contains publicatoins by Tyler N"
+
+  hideMeta: false
+  ShowWordCount: true
+  ShowPageMeta: true
+  DateFormat: "January 2, 2006"
+  ShowPostNavLinks: true
+
+menu:
+  main:
+    - name: "Publications"
+      url: "/publications"
+      weight: 10
+    - name: "Contact Me"
+      url: "/contact"
+
+frontmatter:
+  date: ["date", ":git", "publishDate"]
+  lastmod: [":git", "lastmod", "date"]

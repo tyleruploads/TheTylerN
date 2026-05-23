@@ -1,0 +1,12 @@
+# Hugo output directory for HTML5 files
+public/
+resources/
+.hugo_build.json
+
+# Local environment overrides
+.env
+.env.*
+
+# Operating system files
+.DS_Store
+Thumbs.db
