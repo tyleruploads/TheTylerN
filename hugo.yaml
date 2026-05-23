@@ -1,4 +1,4 @@
-baseURL: https://example.org/
+baseURL: https://tyleruploads.github.io/TheTylerN/
 env: "Production"
 locale: en-us
 title: "The Tyler N"
@@ -21,7 +21,7 @@ params:
     imageHeight: 120
     buttons:
       - name: "View Publications"
-        url: "/publications"
+        url: "publications/"
 
   socialIcons:
     - name: "Github"
@@ -40,10 +40,10 @@ params:
 menu:
   main:
     - name: "Publications"
-      url: "/publications"
+      url: "publications/"
       weight: 10
     - name: "Contact Me"
-      url: "/contact"
+      url: "contact/"
 
 frontmatter:
   date: ["date", ":git", "publishDate"]
