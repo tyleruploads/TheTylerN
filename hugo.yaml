@@ -4,6 +4,7 @@ locale: en-us
 title: "The Tyler N"
 theme: ["PaperMod"]
 enableGitInfo: true
+canonifyURLs: true
 
 caches:
   images:
