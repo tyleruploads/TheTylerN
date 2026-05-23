@@ -1,9 +1,10 @@
 ---
 title: "*Tyler N's Snippets of Experiences, Knowledge, and Code*"
 description: "A publication of experiences, knowledge, and code, with a variety of complexity and length."
-
-weight: 30
-hidemeta: false
+draft: false
+showToc: true
+TocOpen: false
+comments: true
 ---
 
 Welcome to *Tyler N's Snippets of Experiences, Knowledge, and Code*, a publication that includes:
