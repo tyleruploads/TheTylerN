@@ -35,7 +35,7 @@ and overwrote the work I did at school when I saved my new work.
 
 So,
 what is the purpose of me telling you this?
-Is it to say that you should always close your code editor when your done working,
+Is it to say that you should always close your code editor when you're done working,
 or some other trick to prevent this from happening?
 No,
 it definitely is not.
@@ -52,6 +52,12 @@ imagine you aren't using a cloud-based IDE,
 and your just editing a file on your computer,
 in an IDE,
 or simply your terminal.
+To clarify,
+Git is not cloud-based,
+it is local,
+(sitting on your computer),
+that connects to the cloud
+(GitHub).
 What happens when something breaks?
 For some environments,
 this could be catastrophic,
@@ -122,14 +128,14 @@ Linux Installation:
 
 To install Git on Linux, use your distributions package manager.
 
-- Debian/Ubuntu: `apt-get install git`
-- Fedora: `dnf install git`
-- Arch: `pacman -S git`
+- Debian/Ubuntu: `sudo apt-get install git`
+- Fedora: `sudo dnf install git`
+- Arch: `sudo pacman -S git`
 
 
 ### Step 3: Setting up Git (Identity Configuration)
 
-The next step to using git is to set variables that let Git know who you are. These are permanently attached to every commit you do, which allows platforms like GitHub to attack it to your profile card.
+The next step to using git is to set variables that let Git know who you are. These are permanently attached to every commit you do, which allows platforms like GitHub to attach it to your profile card.
 
 ```shell
 # Set your display name (can be your real name, your GitHub username, or many other things)
@@ -219,6 +225,26 @@ Now that your local project is linked to your remote GitHub repository, your wor
 
 ### What to do in the future
 
+```mermaid
+graph TD
+    subgraph Local_Computer ["ON YOUR COMPUTER"]
+        direction TB
+        A["Working Directory<br><small>(Unsaved Changes)</small></br>"]
+        B["Staging area<br><small>(Prepared Changes)</small></br>"]
+        C["Local repository<br><small>(Saved Snapshot)</small></br>"]
+
+        A --> | git add . | B
+        B --> | git commit -m '...' | C
+    end
+
+    subgraph Cloud_Environment ["IN THE CLOUD"]
+        direction TB
+        D["GitHub Repository<br><small>(Online)</small></br>"]
+    end
+
+    C --> | git push | D;
+```
+
 In the future,
 your workflow isn't as complicated as it just may have been.
 You just need to remember
@@ -247,7 +273,6 @@ if you want to be sure.
 And,
 that's your workflow now.
 See how simple it is?
-
 
 ## Section 5: Ending Notes
 
