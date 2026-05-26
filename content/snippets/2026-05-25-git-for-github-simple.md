@@ -14,9 +14,72 @@ slug: "git-for-github-simple.md"
 
 # Git for GitHub: How to use simple Git commands to manage a GitHub repository
 
+
+Recently,
+I was working on creating a website on a cloud-based IDE (CodeHS).
+One night,
+I was editing,
+and then when I was done,
+I simply turned off my monitor and disabled my mouse and keyboard.
+Then,
+the next day at school,
+I continued to work on the website,
+and made significant changes.
+When I got home,
+I made more significant changes,
+but then realized something very important.
+What I realized is
+that when I continued to work on the project at home,
+the cloud-based IDE hadn't refreshed to the new code,
+and overwrote the work I did at school when I saved my new work.
+
+So,
+what is the purpose of me telling you this?
+Is it to say that you should always close your code editor when your done working,
+or some other trick to prevent this from happening?
+No,
+it definitely is not.
+
+After the initial panic,
+I realized that the cloud-based IDE had a history section,
+which has a detailed log of every change that happened to every file.
+I then looked back at my old copy,
+copied the changes,
+and put them back into my new code.
+
+Now,
+imagine you aren't using a cloud-based IDE,
+and your just editing a file on your computer,
+in an IDE,
+or simply your terminal.
+What happens when something breaks?
+For some environments,
+this could be catastrophic,
+and make you loose a lot of work.
+When you make an update to a file,
+the last state and all the states before it
+are gone.
+
+But,
+this isn't the only thing that can happen.
+When you use a version control system (VCS),
+like Git,
+you can always go back to your previous commits,
+(snapshots of your code).
+
+The work I almost lost wasn't very important;
+that work didn't effect anyone,
+except myself.
+Imagine what would happen if I was working on something more important,
+or even just working on something for a job.
+
 Before learning how to manage your project, it helps to understand what Git actually is. Git is overwhelmingly the most popular version control system (VCS), and is completely free to use.
 
-> "By far, the most widely used modern version control system in the world today is Git. Git is a mature, actively maintained open source project originally developed in 2005 by Linus Torvalds, the famous creator of the Linux operating system kernel."
+> "By far,
+> the most widely used modern version control system in the world today is Git.
+> Git is a mature,
+> actively maintained open source project originally developed in 2005 by Linus Torvalds,
+> the famous creator of the Linux operating system kernel."
 > - Source: [Atlassian](https://www.atlassian.com/git/tutorials/what-is-git)
 
 In this guide, you will learn how to use the Git version control system (VCS) to manage a GitHub repository by initializing a project, linking it your GitHub repository, and using it to manage your GitHub repository.
@@ -154,3 +217,94 @@ You have successfully initialized a local project, tracked your changes, and pus
 Now that your local project is linked to your remote GitHub repository, your workflow becomes way more simpler.
 
 
+### What to do in the future
+
+In the future,
+your workflow isn't as complicated as it just may have been.
+You just need to remember
+3 simple commands
+for the most part.
+
+When you want to stage files (tell Git to track them),
+you simply run the command
+`git add <FILES, or . for every file in the directory>`
+
+When you want to commit these files
+(to save a snapshot of them to your local machine),
+you simply run the command
+`git commit -m "COMMIT MESSAGE"`
+Keep in mind that at this point, the new changes have not left your computer.
+
+Then, when you want to put them onto GitHub,
+you just run the command
+`git push`
+If you want to be extra sure that the
+`git push -u origin main` was remembered,
+you can always just run
+`git push origin main`
+if you want to be sure.
+
+And,
+that's your workflow now.
+See how simple it is?
+
+
+## Section 5: Ending Notes
+
+In this tutorial,
+you learned how to
+use Git to manage a local project
+and to link that local project
+with GitHub.
+
+Now that you see how you do it,
+I think it's important
+that I explain a bit more about
+why we do it.
+
+Imagine you are working on
+an Automated Market-Making (AMM) System,
+which is a system that place buy and sell orders
+for many stocks simultaneously,
+that pocket small price differences
+without human intervention,
+and you accidentally make an error in the code,
+which is costing the company money.
+
+If there was no version control system (VCS),
+the company would most likely be very mad,
+(even though they most likely will either way).
+With the usage of a version control system (VCS)
+like Git,
+the company can easily revert back to slightly older
+working code
+and restart the program,
+saving the company a lot of money.
+
+Keep in mind that with Git and GitHub,
+there are many features that allow code
+to be collaborated on by many people
+at the same time,
+and also provides features to
+make sure code can be checked by other collaborators before
+it is approved.
+
+This is why version control systems (VCS)
+are so important in the development workforce.
+
+Even if you do not have a coding job
+and are just coding on your own,
+you can still loose significant progress
+when you do not use version control systems (VCS),
+(like we just discussed).
+
+Also,
+I want to put out that
+while I may not write the best commit statements,
+I am working to make better ones.
+A good standard for writing commits that I found is
+the Conventional Commits standard.
+I will not describe the standard here,
+but I recommend to read
+[this summary](https://www.conventionalcommits.org/en/v1.0.0/#summary)
+to learn more about it.
