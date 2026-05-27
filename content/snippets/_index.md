@@ -1,5 +1,5 @@
 ---
-title: "*Tyler N's Snippets of Experiences, Knowledge, and Code*"
+title: "Tyler N's Snippets of Experiences, Knowledge, and Code"
 description: "A publication of experiences, knowledge, and code, with a variety of complexity and length."
 draft: false
 showToc: true
