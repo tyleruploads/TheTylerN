@@ -12,6 +12,8 @@ caches:
 
 params:
   comments: true
+  responsiveImages: true
+  ShowReadingTime: true
 
   profileMode:
     enabled: true
