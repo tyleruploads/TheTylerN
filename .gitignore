@@ -3,6 +3,10 @@ public/
 resources/
 .hugo_build.json
 
+# Make sure -- --bind folder not accedentally made and included
+--bind/
+
+
 # Local environment overrides
 .env
 .env.*
